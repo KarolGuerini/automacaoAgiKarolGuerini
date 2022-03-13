@@ -2,6 +2,8 @@ package core;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import suport.Generator;
+import suport.Screenshot;
 
 public class Base extends Driver{
     public WebDriver navegador = creatChrome();
@@ -24,6 +26,11 @@ public class Base extends Driver{
 
     public void fecharNavegador() {
         navegador.quit();
+    }
+
+    public void gerarScreenshot() {
+        String screenshotArquivo = "src/test/java/report/" + Generator.dataHoraParaArquivo() + ".png";
+        Screenshot.tirarScreenshot(navegador, screenshotArquivo);
     }
 
 }

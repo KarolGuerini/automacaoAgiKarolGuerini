@@ -12,6 +12,7 @@ public class PesquisasTest extends Base {
         digitarNoCampoDePesquisa("evento");
         submeterAPesquisa();
         resultadoDaPesquisaValida("evento");
+        gerarScreenshot();
         fecharNavegador();
     }
 
@@ -21,6 +22,7 @@ public class PesquisasTest extends Base {
         digitarNoCampoDePesquisa("#$%&");
         submeterAPesquisa();
         resultadoDaPesquisaInvalida();
+        gerarScreenshot();
         fecharNavegador();
     }
 
