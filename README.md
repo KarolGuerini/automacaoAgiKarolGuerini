@@ -15,4 +15,6 @@ https://mvnrepository.com/artifact/junit/junit
 
 - IntelliJ IDEA
 
+- Para rodar todos os testes, use o comando **mvn test**
+
 
